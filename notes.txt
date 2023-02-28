@@ -1,0 +1,24 @@
+//nodemon, helps development of node.js based app
+//it does so by auto restarting apps/servers when file changes are detected
+//(in gitbash)
+"npm" install nodemon --save-dev
+//shortcut for creating npm package (in gitbash)
+"npm" init -y
+//then in package.jspn, under scripts section, write this
+"dev": "nodemon index.js"
+//this will allow for using this command in git bash
+"npm" run dev
+//will allow server to use nodemon functionality, auto restart on file change
+
+
+//express, node.js web app framework
+//provides some web app functionality
+//(in gitbash)
+"npm" install express
+
+//4 main app functions, control routing and request/responses
+//part of express
+app.get
+app.post
+app.delete
+app.patch
