@@ -6,6 +6,7 @@
 //GET POST DELETE PATCH
 
 require('dotenv').config();
+const cors = require('cors');
 
 const fruits = require("./fruits.js");
 
@@ -14,6 +15,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT;
 
+app.use(cors());
 app.use(express.json())
 
 //routes, url pathways in the browser
